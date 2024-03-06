@@ -7,7 +7,7 @@ const ProjectsContainer = () => {
         each of them should have the following properties:
         - Name
         - Description
-        - Image
+        - Image Preview
         - GitHub Link
         - Deployed Link
 
@@ -22,8 +22,20 @@ const ProjectsContainer = () => {
         {/* TODO: Do an iteration over the list of projects up to 3 items, 
             and allow to load more after clicking the "See more" button */}
       </div>
-      <button className="projects-section__more-btn" type="button">
-        See more
+      {/* TODO: Render the "See more" button only if the project list has more than 3 items. 
+                If not then just show the projects (upto 3).
+
+      {PROJECTS.length > 3 ? (
+        <button className="projects-section__btn" type="button">
+          <span className="projects-section__btn__text">See more</span>
+        </button>
+      ) : (
+        {}
+      )} 
+      
+      */}
+      <button className="projects-section__btn" type="button">
+        <span className="projects-section__btn__text">See more</span>
       </button>
     </>
   );

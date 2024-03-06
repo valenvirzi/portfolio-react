@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from "./HeroSection";
 import ProjectsSection from "./ProjectsSection";
+import AboutSection from "./AboutSection";
 
 function Main() {
   return (
@@ -11,6 +12,7 @@ function Main() {
         slogan={`Let's bring new solutions to life.`}
       />
       <ProjectsSection />
+      <AboutSection />
     </div>
   );
 }

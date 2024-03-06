@@ -1,12 +1,13 @@
 import React from "react";
+import Paragraph from "./Paragraph";
 
 function HeroSection({ title, description, slogan }) {
   return (
     <section className="main__hero-section">
       <div className="hero-section__text">
         <h1 className="hero-section__title">{title}</h1>
-        <p className="hero-section__p">{description}</p>
-        <p className="hero-section__p">{slogan}</p>
+        <Paragraph section={"hero"} text={description} />
+        <Paragraph section={"hero"} text={slogan} />
         <div className="hero-section__div">
           <a className="header__link header__link--white" href="#projects">
             <span className="header__link__text">Projects {">"}</span>
