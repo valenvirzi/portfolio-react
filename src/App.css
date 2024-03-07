@@ -3,6 +3,173 @@
   src: url(../public/Lato-Regular.ttf);
 }
 
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* dark mode user-agent-styles */
+/* improves punctuation in supported browsers */
+html {
+  hanging-punctuation: first last;
+}
+
+/* min body height */
+body {
+  min-height: 100svh;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* Improved heading in supported browsers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* improve readability with max-width on paragraphs and lists */
+/* prevent orphans in supported browsers */
+p,
+li {
+  max-width: var(--p-max-width, 65ch);
+  text-wrap: pretty;
+}
+
 .app {
   font-family: "Lato", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  box-shadow: 0 0 0 0.15rem #ffffff;
+  padding: 0 1.35rem;
+}
+
+.header__logo__name {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 3.2rem;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.header__item {
+}
+
+.header__item--highlight {
+  & .header__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    box-shadow: 0 0 0 0.15rem #ffffff;
+    padding: 0.85rem 1.25rem;
+  }
+
+  & .header__link__text {
+    text-decoration: none;
+  }
+}
+
+.header__link {
+}
+
+.header__link__text {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.app__main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* TODO: Styles from the Hero Section to the Footer */
+
+.main__hero-section {
+}
+
+.hero-section__ text {
+}
+
+.hero-section__title {
+}
+
+.hero-section__p {
+}
+
+.hero-section__div {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+
+  & .header__link--white {
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    padding: 0.85rem 1.25rem;
+  }
+}
+
+.header__link--white {
+  & .header__link__text {
+    text-decoration: none;
+  }
 }

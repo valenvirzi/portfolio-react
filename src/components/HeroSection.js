@@ -13,7 +13,7 @@ function HeroSection({ title, description, slogan }) {
             <span className="header__link__text">Projects {">"}</span>
           </a>
           <a className="header__link" href="#resume">
-            <img className="header__link__svg" src="" alt=""></img>
+            <img className="header__link__svg" src="" alt="Resume svg"></img>
             <span className="header__link__text">Resume {">"}</span>
           </a>
         </div>
