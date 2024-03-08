@@ -11,7 +11,7 @@ const AboutSection = () => {
         <Paragraph
           section={"about"}
           text={
-            "I crossed paths with the world of coding thanks to my tech-enthusiast friends. Once I started making my own apps, I got hooked! The amount of cool stuff one can create with just a bit of code completely blewmy mind."
+            "I crossed paths with the world of coding thanks to my tech-enthusiast friends. Once I started making my own apps, I got hooked! The amount of cool stuff one can create with just a bit of code completely blew my mind."
           }
         />
         <Paragraph

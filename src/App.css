@@ -70,14 +70,14 @@ li {
   font-family: "Lato", sans-serif;
   background-color: #000000;
   color: #ffffff;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 2.5rem;
 }
 
 .app__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 3rem;
 }
 
 .header__logo {
@@ -91,8 +91,8 @@ li {
 
 .header__logo__name {
   text-align: center;
-  font-size: 3rem;
-  line-height: 3.2rem;
+  font-size: 4rem;
+  line-height: 4.25rem;
   font-weight: 500;
   letter-spacing: -2px;
 }
@@ -110,6 +110,7 @@ li {
 }
 
 .header__item {
+  font-size: 1.25rem;
 }
 
 .header__item--highlight {
@@ -119,7 +120,7 @@ li {
     justify-content: center;
     border-radius: 2px;
     box-shadow: 0 0 0 0.15rem #ffffff;
-    padding: 0.85rem 1.25rem;
+    padding: 1rem 1.5rem;
   }
 
   & .header__link__text {
@@ -128,6 +129,13 @@ li {
 }
 
 .header__link {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.header__link__svg {
+  max-width: 2rem;
 }
 
 .header__link__text {
@@ -140,21 +148,31 @@ li {
   flex-direction: column;
 }
 
-/* TODO: Styles from the Hero Section to the Footer */
-
 .main__hero-section {
+  background-image: url(../public/code.avif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 3rem;
 }
 
-.hero-section__ text {
+.hero-section__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .hero-section__title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
 }
 
 .hero-section__p {
+  font-size: 1.25rem;
 }
 
 .hero-section__div {
+  margin-top: 1.75rem;
   display: flex;
   align-items: center;
   gap: 2.5rem;
@@ -164,12 +182,47 @@ li {
     background-color: #ffffff;
     border: none;
     border-radius: 2px;
-    padding: 0.85rem 1.25rem;
+    padding: 1rem 1.5rem;
   }
 }
 
 .header__link--white {
   & .header__link__text {
     text-decoration: none;
+  }
+}
+
+/* TODO: Styles from the Projects Section to the Footer */
+
+.main__projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__title {
+  font-size: 3rem;
+}
+
+.projects-section__container {
+}
+
+.projects-section__card {
+  & .card__img {
+  }
+
+  & .card__title {
+  }
+
+  & .card__description {
+  }
+
+  & .card__links {
+  }
+
+  & .card__link {
+  }
+
+  & .card__link__svg {
   }
 }
