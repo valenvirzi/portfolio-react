@@ -199,6 +199,8 @@ li {
 
 /* TODO: Styles from the Projects Section to the Footer */
 
+/*TODO: Modify the card's JSX structure so that the img is inside the text part of the card but doesn't cover the github and deployed links */
+
 .main__projects-section {
   display: flex;
   flex-direction: column;
@@ -238,7 +240,6 @@ li {
     max-width: 100%;
     height: 75%;
     transition: left 300ms ease;
-    /* z-index: -1; */
   }
 
   & .card__title {
