@@ -13,6 +13,7 @@ const ProjectCard = ({ project }) => {
         <p className="card__description">{project.description}</p>
       </div>
       <div className="card__links">
+        {/* TODO: Agregarle una etiqueta de texto a los links de Github y Open Live que precisen para qué son en lugar de que solo haya un svg */}
         <a className="card__link" href={project.githubLink}>
           <img
             className="card__link__svg"
