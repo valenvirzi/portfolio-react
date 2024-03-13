@@ -12,6 +12,42 @@ const ProjectsContainer = () => {
         - Deployed Link
 
         */
+    {
+      name: "Portfolio",
+      description:
+        "Lorem Ipsum port of portfolio port of project portfolio project portfolio project portfolio project",
+      imagePreview:
+        "https://images.unsplash.com/photo-1566241477600-ac026ad43874?q=80&w=2046&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      githubLink: "https://github.com/valenvirzi/portfolio-react",
+      deployedLink: "https://valenvirzi.github.io/portfolio-react/",
+    },
+    {
+      name: "Portfolio",
+      description:
+        "Lorem Ipsum port of portfolio port of project portfolio project portfolio project portfolio project",
+      imagePreview:
+        "https://images.unsplash.com/photo-1566241477600-ac026ad43874?q=80&w=2046&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      githubLink: "https://github.com/valenvirzi/portfolio-react",
+      deployedLink: "https://valenvirzi.github.io/portfolio-react/",
+    },
+    {
+      name: "Portfolio",
+      description:
+        "Lorem Ipsum port of portfolio port of project portfolio project portfolio project portfolio project",
+      imagePreview:
+        "https://images.unsplash.com/photo-1566241477600-ac026ad43874?q=80&w=2046&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      githubLink: "https://github.com/valenvirzi/portfolio-react",
+      deployedLink: "https://valenvirzi.github.io/portfolio-react/",
+    },
+    // {
+    //   name: "Portfolio",
+    //   description:
+    //     "Lorem Ipsum port of portfolio port of project portfolio project portfolio project portfolio project",
+    //   imagePreview:
+    //     "https://images.unsplash.com/photo-1566241477600-ac026ad43874?q=80&w=2046&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    //   githubLink: "https://github.com/valenvirzi/portfolio-react",
+    //   deployedLink: "https://valenvirzi.github.io/portfolio-react/",
+    // }
   ];
   return (
     <>

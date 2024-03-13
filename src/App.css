@@ -48,6 +48,10 @@ video {
   max-width: 100%;
 }
 
+img {
+  max-width: 15rem;
+}
+
 /* Improved heading in supported browsers */
 h1,
 h2,
@@ -68,16 +72,15 @@ li {
 
 .app {
   font-family: "Lato", sans-serif;
-  background-color: #000000;
-  color: #ffffff;
-  padding: 0.75rem 2.5rem;
 }
 
 .app__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.75rem 3rem;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.75rem 8rem;
 }
 
 .header__logo {
@@ -153,7 +156,9 @@ li {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-  padding: 3rem;
+  padding: 3rem 8rem;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .hero-section__text {
@@ -198,6 +203,8 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 4rem;
+  padding: 3rem 8rem;
 }
 
 .section__title {
@@ -205,24 +212,59 @@ li {
 }
 
 .projects-section__container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 8rem;
 }
 
 .projects-section__card {
+  overflow: hidden;
+  position: relative;
+  max-width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: #d9d9d9;
+  padding: 2rem;
+  aspect-ratio: 1;
+
   & .card__img {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    max-width: 100%;
+    height: 75%;
+    transition: left 300ms ease;
+    /* z-index: -1; */
   }
 
   & .card__title {
+    font-size: 2rem;
+    font-weight: 600;
   }
 
   & .card__description {
+    font-size: 1.3rem;
+    line-height: 2rem;
   }
 
   & .card__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   & .card__link {
   }
 
   & .card__link__svg {
+    max-width: 2.5rem;
   }
+}
+
+.projects-section__card:hover .card__img {
+  left: 0;
 }
