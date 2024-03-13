@@ -3,13 +3,15 @@ import React from "react";
 const ProjectCard = ({ project }) => {
   return (
     <article className="projects-section__card">
-      <img
-        className="card__img"
-        src={project.imagePreview}
-        alt="Project preview"
-      ></img>
-      <h3 className="card__title">{project.name}</h3>
-      <p className="card__description">{project.description}</p>
+      <div className="card__text">
+        <img
+          className="card__img"
+          src={project.imagePreview}
+          alt="Project preview"
+        ></img>
+        <h3 className="card__title">{project.name}</h3>
+        <p className="card__description">{project.description}</p>
+      </div>
       <div className="card__links">
         <a className="card__link" href={project.githubLink}>
           <img
