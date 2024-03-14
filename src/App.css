@@ -156,7 +156,7 @@ li {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-  padding: 3rem 8rem;
+  padding: 3.5rem 8rem;
   background-color: #000000;
   color: #ffffff;
 }
@@ -197,14 +197,12 @@ li {
   }
 }
 
-/* TODO: Styles from the Projects Section to the Footer */
-
 .main__projects-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4rem;
-  padding: 3rem 8rem;
+  padding: 3.5rem 8rem;
 }
 
 .section__title {
@@ -261,13 +259,21 @@ li {
   }
 
   & .card__links {
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
   & .card__link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0.65;
+  }
+
+  & .card__link:hover {
+    opacity: 1;
   }
 
   & .card__link__svg {
@@ -293,4 +299,28 @@ li {
 
 .projects-section__btn__text {
   font-size: 1.25rem;
+}
+
+/* TODO: Styles from the About Section to the Footer */
+
+.main__about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3.5rem 8rem;
+  background-color: #d9d9d9;
+}
+
+.about-section__title {
+  align-self: center;
+}
+
+.about-section__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-section__sub-title {
+  font-size: 2rem;
 }
