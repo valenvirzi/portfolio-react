@@ -3,6 +3,16 @@
   src: url(../public/Lato-Regular.ttf);
 }
 
+:root {
+  /* TODO: Choose a primary color for the project */
+  --primary-color: rgb(28, 131, 235);
+  /* --primary-color: rgb(218, 105, 89); */
+  /* --primary-color: rgb(240, 157, 52); */
+  --primary-color-hover: rgb(5, 104, 202);
+  /* --primary-color-hover: rgb(179, 54, 42); */
+  /* --primary-color-hover: rgb(226, 142, 65); */
+}
+
 /* makes sizing simpler */
 *,
 *::before,
@@ -52,6 +62,10 @@ img {
   max-width: 15rem;
 }
 
+p {
+  line-height: 1.5rem;
+}
+
 /* Improved heading in supported browsers */
 h1,
 h2,
@@ -80,7 +94,7 @@ li {
   align-items: center;
   background-color: #000000;
   color: #ffffff;
-  padding: 0.75rem 8rem;
+  padding: 1.5rem 8rem 1rem 8rem;
 }
 
 .header__logo {
@@ -136,6 +150,9 @@ li {
   display: flex;
   align-items: center;
 }
+.header__link:hover {
+  color: var(--primary-color);
+}
 
 .header__link__svg {
   max-width: 2rem;
@@ -156,7 +173,7 @@ li {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-  padding: 3.5rem 8rem;
+  padding: 3rem 8rem;
   background-color: #000000;
   color: #ffffff;
 }
@@ -174,6 +191,7 @@ li {
 
 .hero-section__p {
   font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .hero-section__div {
@@ -202,7 +220,7 @@ li {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
-  padding: 3.5rem 8rem;
+  padding: 3rem 8rem;
 }
 
 .section__title {
@@ -274,6 +292,7 @@ li {
 
   & .card__link:hover {
     opacity: 1;
+    color: var(--primary-color);
   }
 
   & .card__link__svg {
@@ -307,7 +326,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 3.5rem 8rem;
+  padding: 3rem 8rem;
   background-color: #d9d9d9;
 }
 
@@ -324,3 +343,19 @@ li {
 .about-section__sub-title {
   font-size: 2rem;
 }
+
+.about-section__p {
+}
+
+.certificate-link {
+  color: var(--primary-color);
+  text-decoration: underline var(--primary-color) solid;
+}
+
+.certificate-link:hover {
+  color: var(--primary-color-hover);
+  text-decoration: none;
+}
+/* rgb(218,105,89) */
+/* rgb(179,54,42) */
+/* rgb(240,157,52) */
