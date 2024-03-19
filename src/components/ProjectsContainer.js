@@ -71,7 +71,9 @@ const ProjectsContainer = () => {
       
       */}
       <button className="projects-section__btn" type="button">
+        <span className="btn__span--hover"></span>
         <span className="projects-section__btn__text">See more</span>
+        <span className="btn__span--hover"></span>
       </button>
     </>
   );
